@@ -1,0 +1,17 @@
+/* GLOBAL STYLES */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* SECTION STYLES */
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Mobile Devices ---- change to 320 px (620 is just to test)*/
+@media screen and (max-width: 620px) {
+  
+}
