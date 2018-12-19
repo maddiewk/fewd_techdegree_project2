@@ -2,11 +2,19 @@
 
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
+  font-family: "Ruda", sans-serif;
+}
+
+h1 {
+  color: #494949;
+}
+
+p {
+  color: #979797;
 }
 
 /* SECTION STYLES */
@@ -31,6 +39,7 @@ ul li {
 
 li a {
   text-decoration: none;
+  color: #6C6C6C;
 }
 
 li a:hover {
@@ -58,5 +67,19 @@ li a:hover {
 
 /* Mobile Devices ---- change to 320 px (620 is just to test)*/
 @media screen and (max-width: 620px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
 
 }
