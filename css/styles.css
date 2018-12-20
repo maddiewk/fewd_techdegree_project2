@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/****** GLOBAL STYLES ******/
 
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ p {
   line-height: 2;
 }
 
-/* SECTION STYLES */
+/****** SECTION STYLES ******/
 
 .main-nav {
   margin-bottom: 30px;
@@ -91,7 +91,9 @@ a:hover {
 }
 
 
-/* MEDIA QUERIES */
+/****** MEDIA QUERIES ******/
+
+/* MOBILE DEVICES */
 
 @media screen and (max-width: 620px) {
   p {
@@ -106,11 +108,28 @@ a:hover {
   }
 }
 
+/* TABLETS */
+
 @media (min-width: 768px) {
   .mobile {
     display: none;
   }
+  .main-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .profile-img {
+    float: right;
+    width: 370px;
+  }
+  .intro p {
+    text-align: left;
+    margin: 0px 30px;
+  }
+
 }
+
+/* DESKTOP */
 
 @media (min-width: 1024px) {
   .mobile {
