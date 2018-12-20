@@ -17,26 +17,33 @@ h3 {
 p {
   color: #979797;
   margin: auto;
+  line-height: 2;
 }
 
 /* SECTION STYLES */
+
+.main-nav {
+  margin-bottom: 30px;
+}
 
 header,
 .main-nav {
   display: flex;
   flex-direction: column;
-}
-
-.main-nav {
-  /* margin-right: 20px; */
+  background-color: #FDFDFC;
 }
 
 .main-nav a {
   display: block;
-  background-color: #F1F1F1;
   margin-bottom: 5px;
   padding: 1.5em;
+  background-color: white;
+  list-style: none;
+  font-weight: bold;
+  text-decoration: none;
+  color: #6C6C6C;
 }
+
 
 ul li {
   list-style: none;
@@ -47,16 +54,31 @@ li a {
   color: #6C6C6C;
 }
 
-li a:hover {
+a:hover {
   color: #A9A9A9;
+  transition: all 0.3s ease;
+}
+
+.intro,
+#portfolio,
+.search,
+.travel,
+.map,
+.gallery,
+.calculator,
+#contact {
+  padding: 10px 5px;
+  margin-top: 30px;
 }
 
 .profile-img {
-  width: 300px;
+  width: 310px;
+  margin-bottom: 30px;
 }
 
-#contact {
-  margin-bottom: 30px;
+#contact,
+.intro {
+  background-color: #FDFDFC;
 }
 
 .footer {
@@ -65,13 +87,16 @@ li a:hover {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-right: 50px;
 }
 
 
 /* MEDIA QUERIES */
 
-/* Mobile Devices ---- change to 320 px (620 is just to test)*/
 @media screen and (max-width: 620px) {
+  p {
+    max-width: 75%;
+  }
   img {
     max-width: 100%;
     height: auto;
