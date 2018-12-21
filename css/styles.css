@@ -9,6 +9,10 @@ body {
   text-align: center;
 }
 
+ul {
+  padding: 0;
+}
+
 h1,
 h3 {
   color: #494949;
@@ -87,7 +91,7 @@ a:hover {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 
