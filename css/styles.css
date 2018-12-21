@@ -20,7 +20,7 @@ h3 {
 
 p {
   color: #979797;
-  margin: auto;
+  /* margin: auto; */
   line-height: 2;
 }
 
@@ -63,15 +63,19 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.flex {
+  display: flex;
+}
+
 .intro,
-#portfolio,
+.portfolio,
 .search,
 .travel,
 .map,
 .gallery,
 .calculator,
 #contact {
-  padding: 10px 5px;
+  padding: 5px 5px;
   margin-top: 30px;
 }
 
@@ -91,7 +95,6 @@ a:hover {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
-  /* margin-right: 50px; */
 }
 
 
@@ -99,13 +102,16 @@ a:hover {
 
 /* MOBILE DEVICES */
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 320px) {
   p {
     max-width: 75%;
   }
   img {
     max-width: 100%;
     height: auto;
+  }
+  .flex {
+    flex-direction: column;
   }
   .hide {
     display: none;
@@ -124,11 +130,50 @@ a:hover {
   }
   .profile-img {
     float: right;
-    width: 370px;
+    max-width: 50%;
+    height: auto;
+    margin-left: 50px;
+  }
+  .intro {
+    overflow: auto;
   }
   .intro p {
     text-align: left;
-    margin: 0px 30px;
+    padding: 0px 30px;
+    width: 550px;
+    margin: 0;
+  }
+  .portfolio,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {
+    width: 50%;
+  }
+  .flex {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .flex img {
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    padding: 5px;
+  }
+  #port {
+
+  }
+  .footer {
+    margin-bottom: 50px;
+  }
+  .hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .hide li {
+    margin-right: 15px;
   }
 
 }
