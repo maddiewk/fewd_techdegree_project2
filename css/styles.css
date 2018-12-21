@@ -14,13 +14,13 @@ ul {
 }
 
 h1,
-h3 {
+h2 {
   color: #494949;
 }
 
 p {
   color: #979797;
-  /* margin: auto; */
+  margin: auto;
   line-height: 2;
 }
 
@@ -59,7 +59,7 @@ li a {
 }
 
 a:hover {
-  color: #A9A9A9;
+  color: green;
   transition: all 0.3s ease;
 }
 
@@ -84,6 +84,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
+#skills ul li {
+  display: inline-block;
+  text-align: center;
+  border: solid 2px green;
+  padding: 5px;
+  margin: 10px 10px 0px;
+  background-color: #93DC80;
+}
+
 #contact,
 .intro {
   background-color: #FDFDFC;
@@ -102,7 +111,7 @@ a:hover {
 
 /* MOBILE DEVICES */
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) {
   p {
     max-width: 75%;
   }
@@ -134,6 +143,7 @@ a:hover {
     height: auto;
     margin-left: 50px;
   }
+
   .intro {
     overflow: auto;
   }
@@ -152,6 +162,7 @@ a:hover {
     width: 50%;
   }
   .flex {
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
   }
@@ -161,8 +172,11 @@ a:hover {
     height: 350px;
     padding: 5px;
   }
-  #port {
-
+  #contact p,
+  #skills p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
   }
   .footer {
     margin-bottom: 50px;
