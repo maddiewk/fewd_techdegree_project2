@@ -139,11 +139,10 @@ a:hover {
   }
   .profile-img {
     float: right;
-    max-width: 50%;
+    width: 35%;
     height: auto;
     margin-left: 50px;
   }
-
   .intro {
     overflow: auto;
   }
@@ -169,7 +168,7 @@ a:hover {
   .flex img {
     justify-content: space-evenly;
     width: 100%;
-    height: 350px;
+    height: 200px;
     padding: 5px;
   }
   #contact p,
@@ -197,5 +196,57 @@ a:hover {
 @media (min-width: 1024px) {
   .mobile {
     display: none;
+  }
+  #top,
+  .main-nav {
+    flex-direction: row;
+    display: inline-block;
+  }
+  #top {
+    float: left;
+    padding: 5px;
+    margin: 0px 45px;
+  }
+  .main-nav {
+    float: right;
+  }
+  .intro {
+    clear: both;
+    margin: 0px 18px;
+  }
+  .intro p {
+    width: 55%;
+    text-align: left;
+  }
+  .main-nav a {
+    display: inline-block;
+  }
+  #port {
+    margin-top: 65px;
+  }
+  .profile-img {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin-right: 50px;
+  }
+  .portfolio,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {
+    width: 33.3%;
+  }
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .flex img {
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
   }
 }
