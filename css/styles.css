@@ -13,12 +13,18 @@ ul {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2 {
   color: #494949;
 }
 
 p {
+  max-width: 75%;
   color: #979797;
   margin: auto;
   line-height: 2;
@@ -65,6 +71,11 @@ a:hover {
 
 .flex {
   display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
 }
 
 .intro,
@@ -108,24 +119,6 @@ a:hover {
 
 
 /****** MEDIA QUERIES ******/
-
-/* MOBILE DEVICES */
-
-@media (min-width: 320px) {
-  p {
-    max-width: 75%;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .flex {
-    flex-direction: column;
-  }
-  .hide {
-    display: none;
-  }
-}
 
 /* TABLETS */
 
