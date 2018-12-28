@@ -234,7 +234,6 @@ a:hover {
   .flex {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-end;
   }
   .flex img {
     justify-content: space-evenly;
