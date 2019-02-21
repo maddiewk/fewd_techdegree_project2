@@ -65,7 +65,8 @@ li a {
 }
 
 a:hover {
-  color: green;
+  color: white;
+  background-color: coral;
   transition: all 0.3s ease;
 }
 
@@ -88,6 +89,18 @@ a:hover {
 #contact {
   padding: 5px 5px;
   margin-top: 30px;
+}
+
+.portfolio:hover,
+.search:hover,
+.travel:hover,
+.map:hover,
+.gallery:hover,
+.calculator:hover {
+  border-radius: 5%;
+  border-bottom: 3px solid black;
+  border-top: 3px solid blue;
+  cursor: pointer;
 }
 
 .profile-img {
